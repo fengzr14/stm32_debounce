@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"buttondebounce_learn\startup_stm32f103xb.o"
+"buttondebounce_learn\main.o"
+"buttondebounce_learn\stm32f1xx_it.o"
+"buttondebounce_learn\stm32f1xx_hal_msp.o"
+"buttondebounce_learn\button_app.o"
+"buttondebounce_learn\stm32f1xx_hal_gpio_ex.o"
+"buttondebounce_learn\stm32f1xx_hal.o"
+"buttondebounce_learn\stm32f1xx_hal_rcc.o"
+"buttondebounce_learn\stm32f1xx_hal_rcc_ex.o"
+"buttondebounce_learn\stm32f1xx_hal_gpio.o"
+"buttondebounce_learn\stm32f1xx_hal_dma.o"
+"buttondebounce_learn\stm32f1xx_hal_cortex.o"
+"buttondebounce_learn\stm32f1xx_hal_pwr.o"
+"buttondebounce_learn\stm32f1xx_hal_flash.o"
+"buttondebounce_learn\stm32f1xx_hal_flash_ex.o"
+"buttondebounce_learn\stm32f1xx_hal_exti.o"
+"buttondebounce_learn\system_stm32f1xx.o"
+--strict --scatter "ButtonDebounce_Learn\ButtonDebounce_Learn.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ButtonDebounce_Learn.map" -o ButtonDebounce_Learn\ButtonDebounce_Learn.axf
